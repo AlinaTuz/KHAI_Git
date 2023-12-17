@@ -1,0 +1,19 @@
+{
+  "name": "git_lab",
+  "version": "1.0.0",
+  "description": "lab3web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlinaTuz/KHAI_Git.git"
+  },
+  "author": "alina tuz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlinaTuz/KHAI_Git/issues"
+  },
+  "homepage": "https://github.com/AlinaTuz/KHAI_Git#readme"
+}
