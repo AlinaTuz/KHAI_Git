@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/AlinaTuz/KHAI_Git/issues"
   },
-  "homepage": "https://github.com/AlinaTuz/KHAI_Git#readme"
+  "homepage": "https://github.com/AlinaTuz/KHAI_Git#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
