@@ -19,6 +19,19 @@ router.get('/products/:brand', blockSpecialBrand, (request, response) => {
    response.json(filteredProducts); // Send the filtered products as a JSON response
 });
 
+// handle get request for path /products/:id
+router.get('/products/:id', (request, response) => {
+   const { id } = request.params;// Access the id parameter from the URL
+
+   //convert our id value form string to int
+   const parsedValueId = parseInt(id, 10);
+
+   // Filter products based on the brand and id parameters
+   const filteredProducts = products.filter(product => product.id === parsedValueId);
+
+   response.json(filteredProducts);// Send the filtered products as a JSON response
+});
+
 router.get('/productswitherror', (request, response) => {
    let err = new Error("processing error ")
    err.statusCode = 400
