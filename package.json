@@ -1,22 +1,22 @@
 {
-  "name": "git_lab",
+  "name": "nodejs-course",
   "version": "1.0.0",
-  "description": "lab3web",
-  "main": "index.js",
+  "description": "",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AlinaTuz/KHAI_Git.git"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node src/index.js",
+    "migration:generate": "drizzle-kit generate:pg",
+    "migration:push": "drizzle-kit push:pg"
   },
   "author": "alina tuz",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AlinaTuz/KHAI_Git/issues"
-  },
-  "homepage": "https://github.com/AlinaTuz/KHAI_Git#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "drizzle-orm": "^0.30.7",
+    "express": "^4.18.2",
+    "pg": "^8.11.5"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.20.14"
   }
 }
